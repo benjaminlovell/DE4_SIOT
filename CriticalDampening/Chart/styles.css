@@ -1,0 +1,70 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #121212; /* Dark grey color */
+    color: #fff; /* Text color, set to white for better visibility */
+    margin: 0; /* Remove default margin */
+    padding-top: 70px;
+}
+
+.header:first-child {
+    margin-top: 60px; /* Add margin to the top of the first header */
+}
+
+.header h1 {
+    color: white; /* Set the color to the desired color for the header text */
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+.header {
+    text-align: center;
+    padding: 30px 0;
+}
+
+.container, .grid-container {
+    width: 75%;
+    max-width: 100%; /* Allow the container and grid-container to grow up to 100% */
+    margin: 0 auto; /* Center the container and grid-container */
+    padding: 20px 0; /* Add vertical padding */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.chart-container {
+    width: 100%; /* Set the width of chart containers to 100% */
+    box-sizing: border-box;
+    margin-bottom: 20px; /* Add vertical padding between the two charts in the container */
+}
+
+.navbar {
+    background-color: #212121;
+    padding: 15px;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+}
+
+.navbar h1 {
+    margin: 0;
+    color: #BB86FC;
+}
+
+.navbar span {
+    color: #BB86FC;
+    margin-right: 50px;
+}

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <link rel="stylesheet" type="text/css" href="styles.css">
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.9.4/Chart.min.js"></script>
+    <script src="tempChartDHT22.js"></script>
+    <script src="humiChartDHT22.js"></script>
+    <script src="APIHumiChart.js"></script>
+    <script src="APITempChart.js"></script>
+    <script src="combinedTempChart.js"></script>
+    <script src="combinedHumiChart.js"></script>
+
+</head>
+<body>
+    <div class="navbar">
+        <h1>SIOT - Critical Dampening</h1>
+        <span>Ben Lovell</span>
+    </div>
+
+    <div class="header">
+        <h1>"Hey I'm Ben. For my SIOT Project I wanted to create a smart way to reduce damp in my flat. Here is some of the live data I recorded!"</h1>
+    </div>
+
+    <div class="container">
+        <div class="chart-container">
+            <h3>Recorded Humidity Data:</h3>
+            <canvas id="combinedHumiChart"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <h3>Recorded Temperature Data:</h3>
+            <canvas id="combinedTempChart"></canvas>
+        </div>
+    </div>
+
+    <div class="header">
+        <h2>Individual Plots</h2>
+    </div>
+
+    <div class="grid-container">
+        <div class="chart-container">
+            <canvas id="tempChartDHT22"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="humiChartDHT22"></canvas>
+        </div>
+
+        <div class="chart-container">
+            <canvas id="APIHumiChart"></canvas>
+        </div>
+    
+        <div class="chart-container">
+            <canvas id="APITempChart"></canvas>
+        </div>
+    </div>
+
+
+    <script>
+        $(document).ready(function () {
+            getTempData();
+            getHumiData();
+            getAPIHumiData();
+            getAPITempData();
+            getCombinedTempData();
+            getCombinedHumiData();
+        });
+    </script>
+</body>
+</html>

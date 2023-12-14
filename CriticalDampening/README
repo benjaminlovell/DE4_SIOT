@@ -1,0 +1,14 @@
+CRITICAL DAMPENING:
+
+Hey, this is a folder of all the code I wrote during my DE4 SIOT roject.
+
+Each sub-folder has its own README file, hopefully this helps make it clear when you are reading through.
+
+The overall aim of this project was to monitor dampness in my new flat and provide
+a cheap mitigation strategy. This consisted of a facial recognition Smart Doormat and
+a context and data backed TWILIO SMS message that instructed the relevant flatmate to take an
+anti damp action.
+
+Hope you enjoy!
+
+Ben Lovell 13.12.2023.

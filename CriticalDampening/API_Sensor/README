@@ -1,0 +1,5 @@
+This folder contains the AWS EC2 Instance Python script.
+
+It re-directs data from Open Weather Map to ThingSpeak in order to have all my data streams in one place.
+
+It also matches the sampling rate as the other ones.

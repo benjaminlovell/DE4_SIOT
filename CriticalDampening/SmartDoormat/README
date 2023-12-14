@@ -1,0 +1,9 @@
+This is the main code for the Smart Doormat actuation. In the python file it
+fetches the images and carries out facial recognition on them to identify the flatmate.
+
+ONce identified, it fetches recent data from the ThingSpeak channel, and provides a twilio based
+SMS prompt to the relevant flatmate. Helping reduce the damp.
+
+Ive kept the OAuth details private for security reasons.
+
+Ben Lovell SIOT 13.12.2023

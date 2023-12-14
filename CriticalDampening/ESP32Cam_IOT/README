@@ -1,0 +1,8 @@
+This folder contains the Arduino code for the ESP32 cam and Piezoelectric Doormat.
+
+The folder includes the Base64.h library, this is used to decode the images into an ASCII format to
+be sent over HTTP.
+
+This also includes the Google Script file that interprets the encoded images sent to it and directs them to my drive.
+
+Ben Lovell SIOT 13.12.2023

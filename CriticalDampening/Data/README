@@ -1,0 +1,5 @@
+This folder includes the week's worth of data from both the DHT22 sensor and the OpenWeatherMaps API
+
+The notebook, contains a quick script I wrote to look into data correlation.
+
+Ben Lovell SIOT 13.12.23
